@@ -158,6 +158,13 @@ L'application de la question précédente est utilisé la un service Web dont vo
 
 Votre travail consiste à écrire la classe de test correspondante : https://github.com/charroux/testsLogiciel/blob/main/src/test/java/com/example/demo/web/WebTests.java
 
+```
+curl --header "Content-Type: application/json" \   
+  --request POST \
+  --data '{"marque":"f","prix":100}' \
+  http://localhost:8080/voiture
+```
+
 # TP 4
 
 ## Tests de couverture de code
